@@ -1,0 +1,4 @@
+from core.config import SUPABASE_URL, SUPABASE_SERVICE_KEY
+
+print("SUPABASE_URL =", SUPABASE_URL)
+print("SERVICE KEY =", SUPABASE_SERVICE_KEY[:10], "...")
