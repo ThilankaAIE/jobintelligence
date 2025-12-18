@@ -14,7 +14,7 @@ app = FastAPI(
 origins = [
     "http://localhost:3000",           # Next.js local dev
     "http://127.0.0.1:3000",
-    "https://YOUR_PROJECT.pages.dev",  # Cloudflare Pages (replace later)
+    "https://*.pages.dev",  # Cloudflare Pages (replace later)
     # "https://YOUR_CUSTOM_DOMAIN.com",
 ]
 
