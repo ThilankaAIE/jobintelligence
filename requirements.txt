@@ -1,6 +1,5 @@
-fastapi
-uvicorn
-streamlit
+fastapi>=0.110
+uvicorn[standard]>=0.27
 python-dotenv
 supabase
 openai
