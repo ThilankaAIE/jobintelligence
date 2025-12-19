@@ -11,15 +11,14 @@ app = FastAPI(
 # ----------------------------
 # CORS configuration
 # ----------------------------
-origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "https://jobintelligence.pages.dev",  # production Pages domain
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://jobintelligence.pages.dev",
+    ],
+    allow_origin_regex=r"^https:\/\/.*\.jobintelligence\.pages\.dev$",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
