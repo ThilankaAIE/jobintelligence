@@ -14,6 +14,7 @@ app = FastAPI(
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://jobintelligence.pages.dev",  # production Pages domain
 ]
 
 app.add_middleware(
