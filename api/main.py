@@ -12,10 +12,8 @@ app = FastAPI(
 # CORS configuration
 # ----------------------------
 origins = [
-    "http://localhost:3000",           # Next.js local dev
+    "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://*.pages.dev",  # Cloudflare Pages (replace later)
-    # "https://YOUR_CUSTOM_DOMAIN.com",
 ]
 
 app.add_middleware(
